@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("landing_athlete_01.jpg");
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.content {
+    height: 90%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+h2.intro {
+    height: 150px;
+    line-height: 50px;
+    max-width: 400px;
+    letter-spacing: .175em;
+    margin: 3% auto 0;
+    padding-top: 10%;
+}
+
+.intro.logo {
+    height: 130px;
+    line-height: 130px;
+    font-size: 90pt;
+}
+
+h5.intro {
+    height: 150px;
+    max-width: 300px;
+    letter-spacing: .175em;
+    line-height: 40px;
+    margin: 0 auto;
+    padding-top: 3%;
+}
