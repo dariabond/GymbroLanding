@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("landing_athlete_01.jpg");
+    background-image: url("images/landing_athlete_01.jpg");
 
     height: 100%;
     width: 100%;
@@ -16,34 +16,111 @@ body {
     background-size: cover;
 }
 
+
+@font-face {
+    font-family: "ObjectivitySlanted";
+    src: url(fonts/Objectivity-BlackSlanted.otf);
+}
+
+@font-face {
+    font-family: "Objectivity";
+    src: url(fonts/Objectivity-Light.otf);
+}
+
 .content {
-    height: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: ObjectivitySlanted;
 }
 
 h2.intro {
-    height: 150px;
-    line-height: 50px;
-    max-width: 400px;
     letter-spacing: .175em;
+    width: 40%;
     margin: 3% auto 0;
-    padding-top: 10%;
+    max-width: 80%;
+    max-font-size: 60pt;
 }
 
-.intro.logo {
-    height: 130px;
-    line-height: 130px;
-    font-size: 90pt;
+.logo {
+    font-size: 100px;
+    margin: 8% auto 8%;
+    max-width: 90%;
 }
 
 h5.intro {
-    height: 150px;
-    max-width: 300px;
     letter-spacing: .175em;
-    line-height: 40px;
     margin: 0 auto;
-    padding-top: 3%;
+    padding-top: 20px;
+    width: 40%;
+    max-width: 90%;
+}
+
+#subscription_text {
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: .175em;
+}
+
+.sub-form {
+    margin: 30px auto 0;
+    width: 290px;
+    max-width: 80%;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    margin: 8px 0;
+    border: 1px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: medium;
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    margin: 8px 0;
+    background-color: #E64F1A;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: .175em;
+    text-transform: uppercase;
+    font-family: Objectivity;
+    font-size: small;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(201, 55, 20, 1)
+}
+
+@media only screen and (max-width: 768px) {
+    h2.intro {
+        width: 80%;
+    }
+    
+    .logo {
+        margin-top: 60px;
+        font-size: 75px;
+    }
+
+    h5.intro {
+        width: 90%;
+        padding: 40px 0 40px;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 1131/608) {
+    .logo {
+        margin: 3% auto 3%;
+    }
 }
