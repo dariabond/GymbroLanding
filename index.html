@@ -16,13 +16,16 @@
         <h5 class="intro">Be the first to enjoy the best gym experience ever</h5>
 
         <div class='sub-form'>
-            <form action='' method='post'>
-                <input type="email" id="name" name="name" placeholder="Your name">
-                <input type="email" id="email" name="email" placeholder="Your email">
+            <form id='subscriptionForm' action='' method='post' onsubmit="subscribe(event)">
+                <input class="input" type="text" id="name" name="name" onkeydown="onChangeInput(this.id)" placeholder="Enter your name">
+                <input class="input" type="email" id="email" name="email" onkeydown="onChangeInput(this.id) "placeholder="Enter your email">
                 <button type="submit">Get early access</button>
             </form>
+            <span id="after_sub_text">Thank you for joining!</span>
+            <span id="sub_error_message">We are sorry, but error occurred. Please, try to subscribe later.</span>
         </div>
     </div>
+    <script src="index.js"></script>
     
 </body>
 </html>
